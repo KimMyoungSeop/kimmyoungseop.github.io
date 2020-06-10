@@ -51,10 +51,11 @@
       margin-bottom: 30px;
     }
     footer{
+      position: relative;
       width: 1300px;
       height: 100px;
       margin: 10px 0 10px 0;
-      border: 1px solid #bbbbbb;
+      border: 0px solid #bbbbbb;
     }
     #address{
       float: left;
@@ -72,44 +73,51 @@
       float: right;
       margin: 30px 20px 0 0;
     }
-    #sub1 img:hover{
-      box-shadow: 5px 5px 10px gray;
-      transform: translate(5px,-5px);
-    }
-    #sub1 li{
-      display: inline-block;
-      text-align: center;
-      padding-right: 20px;
-    }
-    #sub2 img:hover{
-      transform: scale(1.1);
-    }
-    #sub2 img{
-      width: 80px;
-      height: 80px;
-      border-radius: 50% 50%;
-    }
-    #sub2 li{
-      display: inline-block;
-      padding-right: 20px;
-      text-align: center;
-      width: 180px;
-    }
 
-    #sub3 img{
-      width: 250px;
-      height: 180px;
-      display: block;
+    #mem{
+      color:#04B45F;
     }
-    #sub3 img:hover{
-      transform: scale(1.1);
-      transition: transform 1s;
+    #mem1{
+      background:#00FFBF;
+      color: #FFFFFF;
+    }
+    #leftaside{
+      position: absolute;
+      float: left;
+      border: 1px solid #bbbbbb;
+      margin-top: 10px;
 
     }
-    #sub3 li{
-      display: inline-block;
-      margin-right: 16px;
-      overflow: hidden;
+    #leftaside li{
+      text-align: left;
+      margin-bottom: 20px;
+    }
+    #memtext{
+      position:relative;
+      margin-left: 200px;
+    }
+    #ptop{
+      margin: 10px;
+      font-size: 25px;
+    }
+    form{
+      margin-top: 15px;
+      width: 800px;
+      height: 50px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      border:1px solid;
+      background-color: #E0ECF8
+    }
+
+    #text{
+      width: 150px;
+      height: 35px;
+      margin-left: 5px;
+    }
+    pre{
+      font-size: 14px;
+      font-weight: bold;
     }
 
     </style>
@@ -119,7 +127,7 @@
 
     <header>
       <div id="logo">
-      <img src="./img/head1.png">
+      <a href="./index.html"><img src="./img/head1.png"></a>
     </div>
     <div id="top">
       로그인 | <a href="./signup.html">회원가입</a> | <a href="./intro.html" target="_blank">마이페이지</a> | 고객센터
@@ -138,7 +146,7 @@
           <li>알림 자료</li>
           <li>간행물 통계</li>
           <li>민원 정보공개</li>
-          <li>기관소개</li>
+          <li id="mem">기관소개</li>
           <li>사업별홈페이지</li>
         </ul>
     </div>
@@ -146,9 +154,46 @@
 
     <div class="clear"></div>
 
-    <section>
-      <img src="./img/section1.jpg" width="1080">
+
+    <section id="memtext">
+      <p id="ptop">조직 직원찾기</p>
+      <hr size="3" width="800px" color="#000000">
+      <br><br>
+      <form name="fmem" method="post">
+        <pre> 직원명               담당업무             전화번호</pre>
+        <input id="text" type="text" name="name" placeholder="홍길동">
+        <input id="text" type="text" name="name" placeholder="기획조정부">
+        <input id="text" type="text" name="name" placeholder="000-1111-2222">
+        <input type="button" value="검색">
+      </form>
+
+      <div>
+        <img src="./img/memimg.PNG" width="900" height="900">
+      </div>
+
     </section>
+    <aside id="leftaside">
+      <ul>
+        <li><h3>기관소개</li>
+        <hr size="3" color="#D8D8D8">
+        <li>소개</li>
+        <hr size="1" color="#E6E6E6">
+        <li>핵심사업</li>
+        <hr size="1" color="#E6E6E6">
+        <li>연혁</li>
+        <hr size="1" color="#E6E6E6">
+        <li id="mem1">조직 직원찾기</li>
+        <hr size="1" color="#E6E6E6">
+        <li>정부상징</li>
+        <hr size="1" color="#E6E6E6">
+        <li>오시는길</li>
+        <hr size="1" color="#E6E6E6">
+        <li>시설안내</li>
+        <hr size="1" color="#E6E6E6">
+        <li>누리집이용안내</li>
+        <hr size="1" color="#E6E6E6">
+      </ul>
+    </aside>
 
     <aside>
       <ul>
@@ -159,34 +204,6 @@
       </ul>
     </aside>
 
-    <section>
-      <ul id="sub1">
-        <li><img src="./img/section2.jpg" width="250"><br>소독수칙</li>
-        <li><img src="./img/section3.jpg" width="250"><br>온열질환</li>
-        <li><img src="./img/section4.jpg" width="250"><br>에볼라</li>
-    </ul>
-    </section>
-
-    <section>
-      <ul id="sub2">
-        <li><img src="./img/trans1.PNG"><br>국가별질병정보</li>
-        <li><img src="./img/trans2.PNG"><br>홍보자료</li>
-        <li><img src="./img/trans3.PNG"><br>이달의건강소식</li>
-        <li><img src="./img/trans4.PNG"><br><a href="./member.html">조직도/직원찾기</a></li>
-        <li><img src="./img/trans5.PNG"><br>법령/지침/서식</li>
-        <li><img src="./img/trans6.PNG"><br>공고/공시</li>
-      </ul>
-    </section>
-
-    <section>
-      <ul id="sub3">
-        <li><img src="./img/transf1.jpg"></li>
-        <li><img src="./img/transf2.jpg"></li>
-        <li><img src="./img/transf3.jpg"></li>
-      </ul>
-    </section>
-
-    <div class="clear"></div>
 
     <footer>
       <div id="customer">
