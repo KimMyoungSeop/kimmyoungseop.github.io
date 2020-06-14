@@ -119,11 +119,31 @@
       font-size: 14px;
       font-weight: bold;
     }
+    #add li:hover{
+      font-weight: bold;
+      text-decoration: underline;
+
+    }
+    #sub{
+      margin-left: 8px;
+
+    }
+    #sub li:hover{
+      font-weight: bold;
+      text-decoration: underline;
+    }
+    #side{
+      position: absolute;
+      left:118px;
+    }
+
 
     </style>
 
   </head>
   <body id="page">
+
+
 
     <header>
       <div id="logo">
@@ -173,24 +193,28 @@
 
     </section>
     <aside id="leftaside">
-      <ul>
+      <ul id="add">
         <li><h3>기관소개</li>
         <hr size="3" color="#D8D8D8">
         <li>소개</li>
+          <ul id="sub">
+            <li>-인사말</li>
+            <li>-약력</li>
+          </ul>
         <hr size="1" color="#E6E6E6">
-        <li>핵심사업</li>
+        <li>핵심사업<img id="side" src="./img/n.PNG" onmouseover="this.src='./img/h.PNG'" onmouseout="this.src='./img/n.PNG'"></li>
         <hr size="1" color="#E6E6E6">
-        <li>연혁</li>
+        <li>연혁<img id="side" src="./img/n.PNG" onmouseover="this.src='./img/h.PNG'" onmouseout="this.src='./img/n.PNG'"></li>
         <hr size="1" color="#E6E6E6">
-        <li id="mem1">조직 직원찾기</li>
+        <li id="mem1">조직 직원찾기<img id="side" src="./img/n.PNG" onmouseover="this.src='./img/h.PNG'" onmouseout="this.src='./img/n.PNG'"></li>
         <hr size="1" color="#E6E6E6">
-        <li>정부상징</li>
+        <li>정부상징<img id="side" src="./img/n.PNG" onmouseover="this.src='./img/h.PNG'" onmouseout="this.src='./img/n.PNG'"></li>
         <hr size="1" color="#E6E6E6">
-        <li>오시는길</li>
+        <li>오시는길<img id="side" src="./img/n.PNG" onmouseover="this.src='./img/h.PNG'" onmouseout="this.src='./img/n.PNG'"></li>
         <hr size="1" color="#E6E6E6">
-        <li>시설안내</li>
+        <li>시설안내<img id="side" src="./img/n.PNG" onmouseover="this.src='./img/h.PNG'" onmouseout="this.src='./img/n.PNG'"></li>
         <hr size="1" color="#E6E6E6">
-        <li>누리집이용안내</li>
+        <li>누리집이용안내 <img src="./img/n.PNG" onmouseover="this.src='./img/h.PNG'" onmouseout="this.src='./img/n.PNG'"></li>
         <hr size="1" color="#E6E6E6">
       </ul>
     </aside>
